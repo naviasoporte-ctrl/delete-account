@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Eliminar cuenta — NavIA</title>
+    <meta name="description" content="Solicitud de eliminación de cuenta y datos asociados en NavIA." />
+    <style>
+      :root{
+        --bg:#f7f8fa; --card:#fff; --text:#111827; --muted:#6b7280;
+        --border:rgba(0,0,0,.08); --btn:#007aff; --btnText:#fff; --link:#274690;
+      }
+      @media (prefers-color-scheme: dark){
+        :root{
+          --bg:#0b0f14; --card:#141a22; --text:#e5e7eb; --muted:#9ca3af;
+          --border:rgba(255,255,255,.12); --btn:#2f81f7; --btnText:#fff; --link:#93c5fd;
+        }
+      }
+      body{ margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial;
+        background:var(--bg); color:var(--text); line-height:1.5; }
+      .wrap{ max-width:860px; margin:0 auto; padding:24px 16px 40px; }
+      .card{ background:var(--card); border:1px solid var(--border); border-radius:16px; padding:18px; margin-top:12px; }
+      h1{ font-size:22px; margin:0 0 8px; }
+      h2{ font-size:16px; margin:0 0 10px; }
+      p{ margin:10px 0; color:var(--muted); }
+      a{ color:var(--link); }
+      .btnRow{ display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+      .btn{ display:inline-block; background:var(--btn); color:var(--btnText); text-decoration:none;
+        padding:10px 14px; border-radius:12px; font-weight:800; }
+      .btn.secondary{ background:transparent; color:var(--text); border:1px solid var(--border); }
+      ul{ margin:8px 0 0 18px; color:var(--muted); }
+      code{ background:rgba(127,127,127,.14); padding:2px 6px; border-radius:8px; }
+      .small{ font-size:12px; color:var(--muted); }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="card">
+        <h1>Eliminar cuenta — NavIA</h1>
+        <p>
+          En esta página puedes solicitar la eliminación de tu cuenta de <strong>NavIA</strong> y los datos asociados.
+          Esta opción está disponible también dentro de la app (Ajustes/Perfil → <em>Eliminar cuenta</em>).
+        </p>
+
+        <div class="btnRow">
+          <a class="btn"
+             href="mailto:navia.soporte@gmail.com?subject=NavIA%20-%20Solicitud%20de%20eliminaci%C3%B3n%20de%20cuenta&body=Hola%2C%0A%0ASolicito%20la%20eliminaci%C3%B3n%20de%20mi%20cuenta%20de%20NavIA%20y%20los%20datos%20asociados.%0A%0AEmail%20de%20la%20cuenta%20(en%20NavIA)%3A%20%0AID%20de%20usuario%20(si%20lo%20conoces)%3A%20%0APlataforma%3A%20Android%20/%20iOS%0A%0AGracias."
+          >
+            Solicitar eliminación por email
+          </a>
+
+          <a class="btn secondary" href="../">
+            Volver a soporte
+          </a>
+        </div>
+
+        <p class="small">
+          Si no puedes acceder a la app (por ejemplo, porque la desinstalaste), esta página te permite iniciar la solicitud de eliminación igualmente.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Qué se elimina</h2>
+        <ul>
+          <li>Tu cuenta (identificador y credenciales asociadas).</li>
+          <li>Datos vinculados a la cuenta (por ejemplo, preferencias y favoritos si se sincronizan en servidor).</li>
+        </ul>
+
+        <h2 style="margin-top:14px;">Plazos</h2>
+        <p>
+          La solicitud se procesa lo antes posible. Si se necesita verificar la titularidad de la cuenta, se pedirá confirmación desde el mismo email.
+        </p>
+
+        <p class="small">
+          Nota: pueden existir excepciones por obligaciones legales o prevención de fraude/abuso, si aplican.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Contacto</h2>
+        <p>
+          Email de soporte: <a href="mailto:navia.soporte@gmail.com">navia.soporte@gmail.com</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
